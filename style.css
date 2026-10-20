@@ -193,3 +193,10 @@ span.funder-logo { background: none; }
 .book-meta { font-family: var(--sans); font-size: .9rem; color: var(--muted); line-height: 1.5; }
 .book-meta b { color: var(--ink); font-weight: 600; }
 @media (max-width: 420px) { .book-card { grid-template-columns: 4rem 1fr; gap: .9rem; padding: 1rem; } .book-cover img { width: 4rem; } }
+
+/* Research page: overview themes */
+.research-intro { font-size: 1.25rem; line-height: 1.5; margin-bottom: 1.75rem; }
+.themes { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+.theme { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: 6px; padding: 1.1rem 1.25rem; }
+.theme h3 { margin: 0 0 .5rem; font-size: 1.1rem; }
+.theme p { margin: 0; font-size: 1rem; line-height: 1.55; }
