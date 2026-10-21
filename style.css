@@ -149,7 +149,7 @@ pre { background: var(--surface); border: 1px solid var(--line); border-radius: 
 
 /* Lab member photos */
 .member-photo { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center 25%; border-radius: 4px; margin-bottom: 1rem; background: var(--accent-soft); }
-.teaching-photo { margin: 0 0 2rem; border-radius: 4px; width: 100%; max-height: 22rem; object-fit: cover; }
+.teaching-photo { margin: 0 0 2rem; border-radius: 4px; width: 100%; max-width: 52rem; max-height: 22rem; object-fit: cover; }
 
 /* Research page: smaller seminar photo, funder logo beside each project */
 .research-seminar { max-width: 20rem; }
@@ -202,7 +202,8 @@ span.funder-logo { background: none; }
 .theme p { margin: 0; font-size: 1rem; line-height: 1.55; }
 
 /* Teaching: course cards */
-.course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1.25rem; }
+.course-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; max-width: 52rem; }
+@media (max-width: 600px) { .course-grid { grid-template-columns: 1fr; } }
 .course-card { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; }
 .course-photo { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--accent-soft); }
 .course-body { padding: 1rem 1.25rem 1.25rem; border-top: 3px solid var(--accent); }
