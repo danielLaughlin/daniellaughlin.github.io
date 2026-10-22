@@ -210,3 +210,6 @@ span.funder-logo { background: none; }
 .course-body h2 { margin: 0 0 .2rem; font-size: 1.3rem; }
 .course-when { font: 600 .78rem var(--sans); letter-spacing: .05em; text-transform: uppercase; color: var(--accent); margin: 0 0 .35rem; }
 .course-code { font-family: var(--sans); font-size: .9rem; color: var(--muted); margin: 0; }
+
+/* Make the search box's example text readable on the dark background */
+.search input::placeholder { color: var(--muted); opacity: 1; }
